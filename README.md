@@ -1,4 +1,8 @@
-gof-design-patterns
-===================
+GoF's original design patterns
+==============================
 
-Original GoF design patterns in multiple languages
+Today baking in:
+
+    Java, Python
+
+flavours :-)
