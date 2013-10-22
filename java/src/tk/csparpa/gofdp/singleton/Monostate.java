@@ -1,5 +1,10 @@
 package tk.csparpa.gofdp.singleton;
 
+/**
+ * This class is instantiable multiple times and each instance will share the
+ * same predefined state with all the other instances: this is the Monostate
+ * pattern.
+ */
 public class Monostate {
 	
 	//Shared state among Monostate instances
@@ -10,11 +15,7 @@ public class Monostate {
 	 * the same state
 	 */
 	public Monostate(){
-		Monostate.state = "stateX";
-	}
-	
-	public String getState() {
-	    return Monostate.state;
+		Monostate.state = "X";
 	}
 	
 	/**
@@ -23,5 +24,9 @@ public class Monostate {
 	 */
 	public synchronized void setState(String state) {
 	    Monostate.state = state;
+	}
+	
+	public void greet(){
+		System.out.println("Hi I am a Monostate with state "+Monostate.state);
 	}
 }
