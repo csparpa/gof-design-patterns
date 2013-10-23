@@ -12,7 +12,7 @@ public class Demo {
 		AbstractPrototype instance2 = instance1.clone();
 		instance2.greet();
 		System.out.println("Checking: if prototypes are equal");
-		if(instance1.equals(instance1)){
+		if(instance1.equals(instance2)){
 			System.out.println("True");
 		}
 		else{
